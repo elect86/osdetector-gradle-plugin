@@ -192,4 +192,7 @@ public abstract class OsDetector {
       return new ByteArrayInputStream(bytes);
     }
   }
+
+  public String toString() {
+    return "os: " + getOs() + ", arch: " + getArch() + ", classifier: " + getClassifier();
 }
